@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
             title: Text('Business Card'),
           ),
           body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 backgroundImage: AssetImage('images/avatar2.png'),
@@ -39,6 +40,13 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.0,
                     fontSize: 10.0,
                     fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 20,
+                width: 200,
+                child: Divider(
+                  color: Colors.white,
+                ),
               ),
               Card(
                 color: Colors.white,
@@ -69,33 +77,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//Row(
-//children: <Widget>[
-//Icon(
-//Icons.email,
-//),
-//SizedBox(
-//width: 10.0,
-//),
-//Text('khalil.pan2@gmail.com'),
-//],
-//),
-//Row(
-//children: <Widget>[
-//Icon(
-//Icons.local_phone,
-//size: 20.0,
-//color: Colors.teal.shade900,
-//),
-//SizedBox(
-//width: 10.0,
-//),
-//Text(
-//'+55 81 00000-0000',
-//style: TextStyle(
-//color: Colors.teal.shade900,
-//fontFamily: 'SourceSansPro',
-//),
-//)
-//],
-//),
