@@ -40,44 +40,26 @@ class MyApp extends StatelessWidget {
                     fontSize: 10.0,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(horizontal: 65.0, vertical: 10.0),
-                padding: EdgeInsets.all(2.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.local_phone,
-                      size: 40.0,
-                      color: Colors.teal.shade900,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '+55 81 00000-0000',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'SourceSansPro',
-                      ),
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: ListTile(
+                    trailing: Icon(Icons.phone),
+                    title: Text('+55 81 00000-0000'),
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(horizontal: 65.0, vertical: 10.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text('khalil.pan2@gmail.com'),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: ListTile(
+                    title: Text('khalil.pan2@gmail.com'),
+                    trailing: Icon(Icons.email),
+                  ),
                 ),
               )
             ],
@@ -87,3 +69,33 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//Row(
+//children: <Widget>[
+//Icon(
+//Icons.email,
+//),
+//SizedBox(
+//width: 10.0,
+//),
+//Text('khalil.pan2@gmail.com'),
+//],
+//),
+//Row(
+//children: <Widget>[
+//Icon(
+//Icons.local_phone,
+//size: 20.0,
+//color: Colors.teal.shade900,
+//),
+//SizedBox(
+//width: 10.0,
+//),
+//Text(
+//'+55 81 00000-0000',
+//style: TextStyle(
+//color: Colors.teal.shade900,
+//fontFamily: 'SourceSansPro',
+//),
+//)
+//],
+//),
